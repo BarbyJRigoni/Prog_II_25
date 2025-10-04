@@ -1,0 +1,35 @@
+<!--Estructura basica de una página HTML --> 
+
+<!DOCTYPE html><!-- Informa al navegador que usamos HTML5 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <title>Mi primera Web</title> <!-- Título de la pesataña -->
+</head>
+<body>
+    <h1>Noticias del Poli</h1>
+    <p>Este es mi primer sitio en HTML</p>
+</body>
+</html>
+
+ <h2>Mis hobbies</h2>
+<ul>
+    <li>Programar</li>
+    <li>Leer</li>
+    <li>Deporte</li>
+</ul>
+<a href=""https://www.politecnico.ar/">Visita mi blog</a>
+
+
+<!DOCTYPE html><!-- Informa al navegador que usamos HTML5 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <title>Mi primer formulario</title> <!-- Título de la pesataña -->
+<form action="/procesar.php" method="POST">
+    <label for="nombre">Nombre:</label> <!--'label' describe el propósito de un campo. El atributo for debe coincidir con el id del campo correspondiente-->
+    <input type="text" id="nombre" name="nombre" required><br><br> <!--'input' crea un campo de entrada. 'type' define el tipo de dato que se espera-->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <input type="submit" value="Enviar">
+</form>

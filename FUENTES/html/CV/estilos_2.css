@@ -1,0 +1,109 @@
+/* 🎨 Tema por defecto (claro) */
+:root {
+    --fondo: #f9f9f9;
+    --texto: #333;
+    --caja: #ffffff;
+    --borde: #eee;
+    --principal: #3498db;
+    --encabezado: #2c3e50;
+    --subencabezado: #34495e;
+    --chip-fondo: #e1f5fe;
+    --chip-texto: #0277bd;
+}
+
+/* 🌙 Tema oscuro */
+body.dark-mode {
+    --fondo: #1e1e1e;
+    --texto: #f5f5f5;
+    --caja: #2c2c2c;
+    --borde: #444;
+    --principal: #9b59b6;
+    --encabezado: #ecf0f1;
+    --subencabezado: #bdc3c7;
+    --chip-fondo: #3d2c4a;
+    --chip-texto: #d7bde2;
+}
+
+/* 📌 Estilos generales usando variables */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: var(--caja);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--encabezado);
+}
+
+h2 {
+    color: var(--subencabezado);
+    border-bottom: 2px solid var(--borde);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.skills span {
+    background: var(--chip-fondo);
+    color: var(--chip-texto);
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid var(--principal);
+    width: 180px;
+}
+
+a {
+    color: var(--principal);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 🔘 Botón para cambiar tema */
+.toggle-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background: var(--principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    opacity: 0.8;
+}
