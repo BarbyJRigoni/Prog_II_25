@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--Informa al navegador que usamos HTML5 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title> <!--Título de la pestaña -->
+</head>
+
+<!-- Cuando el usuario hace clic en el boton, aparece un mensaje emergente-->
+ <button onclick="alert ('!Bienvenido a la pagina¡') ">Saludar</button>
+
+ <!-- Texto inicial-->
+  <p id="mensaje">Texto original</p>
+
+  <!-- Al hacer clic, cambia el contenido del párrafo-->
+<button onclick="document.getElementById('mensaje').innerText = 'Texto actualizado'">Cambiar Texto</button>
+
+<!-- Formulario básico con validación-->
+
+<form onsubmit="return validarFormulario()">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="submit" value="Enviar">
+</form>
+
+<script>
+    function validarFormulario() {
+        // Tomamos el valor del campo de texto
+        const nombre = document.getElementById('nombre').value;
+        //Verificamos si el campo está vacío
+        if (nombre.trim() === '') {
+            alert('El campo nombre es obligatorio.');
+            return false; // Evita el envío del formulario
+        }
+        alert('Formulario enviado correctamente. ¡Gracias, ' + nombre + '!');
+        return true; // Permite el envío del formulario
+    }
+</script>

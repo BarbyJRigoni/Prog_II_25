@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing del Curso</title>
+    <style>
+        body { font-family: sans-serif; background: #eef; padding: 30px; }
+        form { background: white; padding: 20px; border-radius: 10px; width: 300px; margin: auto; }
+        input, testarea { width: 100%; margin-bottom: 10px; padding: 8px; }
+        h1 { text-alig: center; }
+        </style>
+</head>
+<body>
+    <h1>Curso de Flask</h1>
+    <form onsubmit="return validar()">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Correo Electrónico">
+        <texttarea id="mensaje" placeholder="Mensaje"></texttarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function validar() {
+            let nombre = document.getElementById("nombre").value;
+            let email = document.getElementById("email").value;
+
+            if (nombre === "" || email === "") {
+                alert("Por favor, completa todos los campos requeridos.");
+                return false; // Evita el envío del formulario
+            }
+            return true;
+        }
+
+    </script>
+</body>
+</html>
