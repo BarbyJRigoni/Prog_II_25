@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background:#f9fafb; color:#111; margin:0; }
+.site-header, .site-footer { background:#1f2937; color:white; padding:10px; }
+.nav a { color:white; margin-right:10px; text-decoration:none; }
+.container { padding:20px; }
+.form { background:#fff; padding:20px; border-radius:8px; max-width:400px; }
+.table { border-collapse: collapse; width:100%; background:#fff; margin-top:10px; }
+.table th, .table td { border:1px solid #ddd; padding:8px; text-align:left; }
+.msg { padding:8px; border-radius:4px; margin-bottom:8px; }
+.msg-success { background:#d1fae5; color:#065f46; }
+.msg-error { background:#fee2e2; color:#7f1d1d; }
